@@ -4,7 +4,7 @@ Plugin Name: Quick Edit
 Description: <strong>Quick Edit</strong> is a Dashboard Widget. It provides the flexibiltiy to add any post or page to this dashboard widget with a metabox. The added posts or pages can be edited easily from this dashboard widget.
 Author: Zakaria Binsaifullah
 Author URI: https://wpquerist.com
-Version: 1.5.0
+Version: 1.6.0
 Text Domain: quick-edit
 License: GPLv2 or later
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,8 +32,21 @@ class QUICK_EDIT
         // Dashboard widget
         add_action( 'wp_dashboard_setup', array( $this, 'que_quick_edit_dashboard' ) );
 
+        // Plugin tracker
+        add_action( 'plugins_loaded', array( $this, 'appsero_init_tracker_quick_edit' ) );
     }
-
+    /**
+     * Initialize the plugin tracker
+     * @return void
+     */
+    function appsero_init_tracker_quick_edit() {
+        if ( ! class_exists( 'Appsero\Client' ) ) {
+            require_once __DIR__ . '/appsero/src/Client.php';
+        }
+        $client = new Appsero\Client( '3eacb302-2053-4d04-84f1-911062f2b209', 'quick-edit', __FILE__ );
+        // Active insights
+        $client->insights()->init();
+    }
     /*
      * Plugin text domain load function
      * */
@@ -189,17 +202,3 @@ EOD;
 if ( class_exists( 'QUICK_EDIT' ) ) {
     $que_class = new QUICK_EDIT();
 }
-
-
-/**
- * Initialize the plugin tracker
- *
- * @return void
- */
-function appsero_init_tracker_quick_edit() {
-    $client = new Appsero\Client( '3eacb302-2053-4d04-84f1-911062f2b209', 'quick-edit', __FILE__ );
-    // Active insights
-    $client->insights()->init();
-}
-
-appsero_init_tracker_quick_edit();
