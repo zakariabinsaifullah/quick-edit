@@ -4,7 +4,7 @@ Version: 1.6.3
 Stable tag: 1.6.3
 Author: Zakaria Binsaifullah
 Author URI: http://wpquerist.com/
-Contributors: binsaifullah, hasinhayder
+Contributors: binsaifullah
 Tags: widget, dashboard widget
 Requires at least: 5.6
 Tested up to: 6.2.2
