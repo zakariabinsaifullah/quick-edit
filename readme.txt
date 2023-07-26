@@ -1,7 +1,7 @@
 === Post and Page Quick Editing===
 Plugin Name: Quick Edit
-Version: 1.3.0
-Stable tag: 1.3.0 
+Version: 1.4.0
+Stable tag: 1.4.0 
 Author: Zakaria Binsaifullah
 Author URI: http://wpquerist.com/
 Contributors: binsaifullah, hasinhayder
