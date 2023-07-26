@@ -19,10 +19,16 @@ if( !class_exists('Appsero\Client') ) {
     require __DIR__ . '/appsero/src/Client.php';
 }
 
-class QUICK_EDIT
-{
-    public function __construct() {
+function appsero_init_tracker_quick_edit() {
+    $client = new Appsero\Client( '3eacb302-2053-4d04-84f1-911062f2b209', 'quick-edit', __FILE__ );
+    // Active insights
+    $client->insights()->init();
+}
 
+appsero_init_tracker_quick_edit();
+
+class QUICK_EDIT {
+    public function __construct() {
         // text-domain load
         add_action( 'plugins_loaded', array( $this, 'que_text_domain_load' ) );
 
@@ -34,18 +40,6 @@ class QUICK_EDIT
 
         // Dashboard widget
         add_action( 'wp_dashboard_setup', array( $this, 'que_quick_edit_dashboard' ) );
-
-        // Plugin tracker
-        add_action( 'plugins_loaded', array( $this, 'appsero_init_tracker_quick_edit' ) );
-    }
-    /**
-     * Initialize the plugin tracker
-     * @return void
-     */
-    public function appsero_init_tracker_quick_edit() {
-        $client = new Appsero\Client( '3eacb302-2053-4d04-84f1-911062f2b209', 'quick-edit', __FILE__ );
-        // Active insights
-        $client->insights()->init();
     }
     /*
      * Plugin text domain load function
