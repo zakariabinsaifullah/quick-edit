@@ -1,12 +1,12 @@
 === Post and Page Quick Editing===
 Plugin Name: Quick Edit
-Version: 1.2.0
-Stable tag: 1.2.0 
+Version: 1.3.0
+Stable tag: 1.3.0 
 Author: Zakaria Binsaifullah
 Author URI: http://wpquerist.com/
 Contributors: binsaifullah, hasinhayder
 Tags: widget, dashboard widget
-Requires at least: 4.7
+Requires at least: 5.6
 Tested up to: 6.2.2
 Requires PHP: 7.0
 License: GPLv2

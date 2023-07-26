@@ -4,7 +4,7 @@ Plugin Name: Quick Edit
 Description: <strong>Quick Edit</strong> is a Dashboard Widget. It provides the flexibiltiy to add any post or page to this dashboard widget with a metabox. The added posts or pages can be edited easily from this dashboard widget.
 Author: Zakaria Binsaifullah
 Author URI: https://wpquerist.com
-Version: 1.2.0
+Version: 1.3.0
 Text Domain: quick-edit
 License: GPLv2 or later
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
