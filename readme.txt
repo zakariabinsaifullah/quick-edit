@@ -1,7 +1,7 @@
 === Post and Page Quick Editing===
 Plugin Name: Quick Edit
-Version: 1.4.0
-Stable tag: 1.4.0 
+Version: 1.5.0
+Stable tag: 1.5.0 
 Author: Zakaria Binsaifullah
 Author URI: http://wpquerist.com/
 Contributors: binsaifullah, hasinhayder
@@ -53,7 +53,7 @@ It's really easy and super simple to install **Quick Edit** plugin.
 
 == Changelog ==
 
-= 1.2.0 =
+= 1.5.0 =
 Compatibility with WordPress 6.2.2
 
 = 1.0.0 =
