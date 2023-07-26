@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or die( 'Stop tryig this wrong way. Go Back.' );
 
 // appsero tracker
 if( !class_exists('Appsero\Client') ) {
-    require __DIR__ . '/appsero/src/Client.php';
+    require __DIR__ . '/lib/appsero/src/Client.php';
 }
 
 function appsero_init_tracker_quick_edit() {
