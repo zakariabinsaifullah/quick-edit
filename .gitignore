@@ -1,1 +1,15 @@
-.DS_Store
+/.DS_Store
+
+# Ignore node_modules
+node_modules
+
+# Ignore build
+build
+
+# Ignore .env
+.env
+
+# Ignore .DS_Store
+.DS_Store  
+
+
